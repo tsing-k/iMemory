@@ -188,28 +188,30 @@
     <br />
     <p>@ViewBag.Name</p>
 </div>
-@using (@Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "mycenter" }))
+@using (@Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "form" }))
 {
     @Html.AntiForgeryToken()
     @Html.ValidationSummary(true)
-    <div class="mysign">
-        @*<div class="col-lg-11 text-center text-info">
-            <h2>请登录</h2>
-        </div>*@
-        <div class="col-lg-10">
-            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @placeholder = @Html.DisplayNameFor(m => m.UserName), @autofocus = "true", @required = "true" })
-            @Html.ValidationMessageFor(m => m.UserName, null, new { @class = "valmsg"})
-        </div>
-        <div class="col-lg-10">
-        </div>
-        <div class="col-lg-10">
-            @Html.PasswordFor(m => m.Pwd, new { @class = "form-control", @placeholder = @Html.DisplayNameFor(m => m.Pwd), @autofocus = "true", @required = "true" })
-            @Html.ValidationMessageFor(m => m.Pwd, null, new { @class = "valmsg" })
-        </div>
-        <div class="col-lg-10">
-        </div>
-        <div class="col-lg-10">
-            <button type="submit" id="btn" class="btn btn-success col-lg-12">进入</button>
+    <div class="mycenter">
+        <div class="mysign">
+            @*<div class="col-lg-11 text-center text-info">
+                    <h2>请登录</h2>
+                </div>*@
+            <div class="col-lg-10">
+                @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @placeholder = @Html.DisplayNameFor(m => m.UserName), @autofocus = "true", @required = "true" })
+                @Html.ValidationMessageFor(m => m.UserName, null, new { @class = "valmsg" })
+            </div>
+            <div class="col-lg-10">
+            </div>
+            <div class="col-lg-10">
+                @Html.PasswordFor(m => m.Pwd, new { @class = "form-control", @placeholder = @Html.DisplayNameFor(m => m.Pwd), @autofocus = "true", @required = "true" })
+                @Html.ValidationMessageFor(m => m.Pwd, null, new { @class = "valmsg" })
+            </div>
+            <div class="col-lg-10">
+            </div>
+            <div class="col-lg-10">
+                <input type="submit" id="btn" class="btn btn-success col-lg-12" value="进入" />
+            </div>
         </div>
     </div>
 }
