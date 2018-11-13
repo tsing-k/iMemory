@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iMemory", "iMemory\iMemory.csproj", "{990D9E6B-7B86-424B-AA67-72978626319A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{990D9E6B-7B86-424B-AA67-72978626319A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{990D9E6B-7B86-424B-AA67-72978626319A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{990D9E6B-7B86-424B-AA67-72978626319A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{990D9E6B-7B86-424B-AA67-72978626319A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78D17D7C-DBDB-43F1-B346-1A50F3B87F76}
+	EndGlobalSection
+EndGlobal
