@@ -1,0 +1,48 @@
+﻿@{
+    ViewBag.Title = "我们的记忆";
+}
+
+@{ 
+    Layout = null;
+}
+
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui, user-scalable=no">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/screen.css" rel="stylesheet" type="text/css">
+    <link href="~/Content/ma5gallery.css" rel="stylesheet" type="text/css">
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/ma5gallery.js"></script>
+    <script src="~/Scripts/functions.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("生日蛋糕", "Index", "Splash", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+        </div>
+    </div>
+
+    <section class="site-header container">
+        <h1>@ViewBag.Title</h1>
+        <div class="ma5-gallery">
+            @foreach (string url in ViewBag.Images)
+            {
+                <figure class="gallery-item">
+                    <img src="@url" alt="">
+                    <figcaption>@ViewBag.Title</figcaption>
+                </figure>
+            }
+        </div>
+    </section>
+</body>
+</html>

@@ -7,12 +7,15 @@ html {
     font-size: 0.5vw; } }
 /* global */
 body {
-  font-family: arial, sans-serif;
-  font-size: 1.6rem;
-  color: #000000;
-  overflow-y: scroll;
-  color: #ffffff;
-  padding-bottom: 6rem; }
+    font-family: arial, sans-serif;
+    font-size: 1.6rem;
+    color: #000000;
+    overflow-y: scroll;
+    color: #ffffff;
+    background-color: #222222;
+    padding-bottom: 6rem;
+    margin-top: 50px;
+}
 
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
