@@ -18,8 +18,8 @@ namespace iMemory.Controllers
             if(ModelState.IsValid)
             {
                 if (model != null
-                    && (model.UserName.ToLower().Equals("lifangfang") || (model.UserName.Equals("李芳芳")))
-                    && model.Pwd.Equals("200418KuN"))
+                    && (model.UserName.Trim().ToLower().Equals("lifangfang") || (model.UserName.Trim().Equals("李芳芳")))
+                    && model.Pwd.Trim().Equals("200418KuN"))
                 {
                     return Index();
                 }
